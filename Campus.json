@@ -1109,12 +1109,59 @@
                 "riesgo": "Medio"
             }
         ]
+    },
+    {
+        "id":2,
+        "grupos":"trainers",
+        "trainers":[
+            {
+                "id":1,
+                "trainer":"Jholver",
+                "salón":"Sputnik",
+                "ruta1":"Ruta NodeJS",
+                "módulo1":"Fundamentos de la programación(Introducción a la algoritmia, Pseint y Python)",
+                "hora":"6am a 10am"
+            },
+            {
+                "id":2,
+                "trainer":"Pedro",
+                "salón":"Artemis",
+                "ruta2":"Ruta Java",
+                "módulo2":"Programación Web(HTML, CSS Y Bootstrap",
+                "hora":"10am a 2pm"
+            },
+            {
+                "id":3,
+                "trainer":"Miguel",
+                "salón":"Apolo",
+                "ruta3":"Ruta NetCore",
+                "módulo3":"Programación Formal(Java, JavaScript, C#",
+                "hora":"2pm a 6pm"
+            },
+            {
+                "id":4,
+                "trainer":"Juank",
+                "salón":"Sputnik",
+                "ruta3":"Ruta NetCore",
+                "módulo4":"Bases de datos(Mysql, MongoDb y Postgresql",
+                "hora":"6pm a 10pm"
+            },
+            {
+                "id":5,
+                "trainer":"Isa",
+                "salón":"Artemis",
+                "ruta2":"Ruta Java",
+                "módulo5":"Backend(NetCore, Spring Boot, NodeJS y Express",
+                "hora":"6am a 10am"
+            }
+        ]
+    },
+    {
+        
     }
     
     
 ]
-
-Desarrollado por Alejandra Machuca y Yessica Perez grupo T2
    
 
    
