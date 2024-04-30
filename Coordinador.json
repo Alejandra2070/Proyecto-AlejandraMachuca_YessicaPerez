@@ -2,6 +2,8 @@
     {
         "id":3,
         "coordinador":"Steven Carvajal",
+        "contraseña":"coordinador1",
+        "usuario":"Steven",
         "Permisos":[
             {
                 "id":1,
