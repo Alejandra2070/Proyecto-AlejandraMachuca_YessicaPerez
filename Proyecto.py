@@ -51,4 +51,4 @@ if(x==1):
       informacion[0]["alumnos"].append(campernuevo)
       archivoGuardado(informacion)
       print("se ha agregado el nuevo estudiante correctamente")  
-
+print("")
