@@ -1,6 +1,7 @@
 [
     {
         "id": 1,
+        "contraseña":"campers",
         "grupo": "t1",
         "alumnos": [
             {
