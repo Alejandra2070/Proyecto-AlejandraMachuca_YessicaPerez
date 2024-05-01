@@ -1,0 +1,23 @@
+[
+    {
+        "camperID":1,
+        "rutaNombre":"Ruta Java",
+        "fechaI":"19-02-2024",
+        "fechaF":"19-02-2025",
+        "salon":"Salón Sputnik"
+    },
+    {
+        "camperID":2,
+        "rutaNombre":"Ruta NetCore",
+        "fechaI":"19-02-2024",
+        "fechaF":"19-02-2025",
+        "salon":"Salón Apolo"
+    },
+    {
+        "camperID":3,
+        "rutaNombre":"Ruta NodeJS",
+        "fechaI":"19-02-2024",
+        "fechaF":"19-02-2025",
+        "salon":"Salón Artemis"
+    }
+]
