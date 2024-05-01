@@ -1,0 +1,572 @@
+[
+    {
+        "id":1,
+        "grupo":"t1",
+        "campers":[
+            {
+                "id":1,
+                "nombre":"Luis",
+                "apellido":"Caicedo",
+                "direccion":"Calle 6 # 55C-42",
+                "acudiente":"Pedro Caicedo",
+                "numero_celular":3243293371,
+                "numero_fijo":"6015689286",
+                "estado":"Aprobado",
+                "riesgo":"Bajo"
+            },
+            {
+                "id":2,
+                "nombre":"Jaime",
+                "apellido":"Barrera",
+                "direccion":"Calle 6 # 55C-42",
+                "acudiente":"Juan Barrera",
+                "numero_celular":3123702377,
+                "numero_fijo":"60156861023",
+                "estado":"Cursando",
+                "riesgo":"Medio"
+            },
+            {
+                "id":3,
+                "nombre":"Karen",
+                "apellido":"Cristancho",
+                "direccion":"Calle 6 # 55C-42",
+                "acudiente":"Maria Cristancho",
+                "numero_celular":3232483683,
+                "numero_fijo":"60156887212",
+                "estado":"En proceso de ingreso",
+                "riesgo":"Bajo"
+            },
+            {
+                "id":4,
+                "nombre":"Jerxon",
+                "apellido":"Correa",
+                "direccion":"Calle 6 # 55C-42",
+                "acudiente":"Eduardo Correa",
+                "numero_celular":3225082501,
+                "numero_fijo":"60156895978",
+                "estado":"Aprobado",
+                "riesgo":"Bajo"
+            },
+            {
+                "id":5,
+                "nombre":"Maria",
+                "apellido":"Lizarazo",
+                "direccion":"Calle 6 # 55C-42",
+                "acudiente":"Andres Lizarazo",
+                "numero_celular":3123154497,
+                "numero_fijo":"6015795223",
+                "estado":"Cursando",
+                "riesgo":"Medio"
+            },
+            {
+                "id":6,
+                "nombre":"Luis",
+                "apellido":"Bautista",
+                "direccion":"Calle 6 # 55C-42",
+                "acudiente":"Jorge Bautista",
+                "numero_celular":3108756324,
+                "numero_fijo":"608742652",
+                "estado":"Cursando",
+                "riesgo":"Alto"
+            },
+            {
+                "id":7,
+                "nombre":"Nilson",
+                "apellido":"Carvajal",
+                "direccion":"Calle 6 # 55C-42",
+                "acudiente":"Dario Carvajal",
+                "numero_celular":3134789614,
+                "numero_fijo":"6015214789",
+                "estado":"Inscrito",
+                "riesgo":"Bajo"
+            },
+            {
+                "id":8,
+                "nombre":"Freiler",
+                "apellido":"Estupiñan",
+                "direccion":"Calle 6 # 55C-42",
+                "acudiente":"Javier Estupiñan",
+                "numero_celular":3124276149,
+                "numero_fijo":"6015896523",
+                "estado":"Graduado",
+                "riesgo":"Bajo"
+            },
+            {
+                "id":9,
+                "nombre":"Alejandra",
+                "apellido":"Machuca",
+                "direccion":"Calle 6 # 55C-42",
+                "acudiente":"Esperanza Machuca",
+                "numero_celular":3134674085,
+                "numero_fijo":"6015664912",
+                "estado":"Cursando",
+                "riesgo":"Medio"
+            },
+            {
+                "id":10,
+                "nombre":"Andres",
+                "apellido":"Guerrero",
+                "direccion":"Calle 6 # 55C-42",
+                "acudiente":"Maria Guerrero",
+                "numero_celular":3189742589,
+                "numero_fijo":"6015655646",
+                "estado":"En proceso de ingreso",
+                "riesgo":"Alto"
+            },
+            {
+                "id":11,
+                "nombre":"Brayan",
+                "apellido":"Maldonado",
+                "direccion":"Calle 6 # 55C-42",
+                "acudiente":"Stiven Maldonado",
+                "numero_celular":3258965478,
+                "numero_fijo":"601261484",
+                "estado":"Retirado",
+                "riesgo":"Bajo"
+            },
+            {
+                "id":12,
+                "nombre":"Camilo",
+                "apellido":"Machuca",
+                "direccion":"Calle 6 # 55C-42",
+                "acudiente":"Pedro Machuca",
+                "numero_celular":3147896532,
+                "numero_fijo":"60156587",
+                "estado":"Cursando",
+                "riesgo":"Alto"
+            },
+            {
+                "id":13,
+                "nombre":"Diego",
+                "apellido":"Garcia",
+                "direccion":"Calle 6 # 55C-42",
+                "acudiente":"Sandra Garcia",
+                "numero_celular":3187596321,
+                "numero_fijo":"6015681236",
+                "estado":"Expulsado",
+                "riesgo":"Alto"
+            },
+            {
+                "id":14,
+                "nombre":"Jean",
+                "apellido":"Guerrero",
+                "direccion":"Calle 6 # 55C-42",
+                "acudiente":"Antonio Guerrero",
+                "numero_celular":3204578963,
+                "numero_fijo":"605487236",
+                "estado":"Inscrito",
+                "riesgo":"Medio"
+            },
+            {
+                "id":15,
+                "nombre":"Jesus",
+                "apellido":"Bustamante",
+                "direccion":"Calle 6 # 55C-42",
+                "acudiente":"Andrea Bustamante",
+                "numero_celular":3198754362,
+                "numero_fijo":"6015655964",
+                "estado":"Aprobado",
+                "riesgo":"Medio"
+            }
+        ]
+    },
+    {
+        "id":2,
+        "grupo":"t2",
+        "campers":[
+            {
+                "id":1,
+                "nombre":"Anne",
+                "apellido":"Ortega",
+                "direccion":"Calle 6 # 55C-42",
+                "acudiente":"Marta Ortega",
+                "numero_celular":3158763254,
+                "numero_fijo":"6045876254",
+                "estado":"Cursando",
+                "riesgo":"Bajo"
+            },
+            {
+                "id":2,
+                "nombre":"Daniel",
+                "apellido":"Mendez",
+                "direccion":"Calle 6 # 55C-42",
+                "acudiente":"Johan Mendez",
+                "numero_celular":3198532145,
+                "numero_fijo":"601545872",
+                "estado":"En proceso de ingreso",
+                "riesgo":"Medio"
+            },
+            {
+                "id":3,
+                "nombre":"Pablo",
+                "apellido":"Delgado",
+                "direccion":"Calle 6 # 55C-42",
+                "acudiente":"Sofia Delgado",
+                "numero_celular":3245864793,
+                "numero_fijo":"60156887145",
+                "estado":"Expulsado",
+                "riesgo":"Bajo"
+            },
+            {
+                "id":4,
+                "nombre":"Carolina",
+                "apellido":"Aguilar",
+                "direccion":"Calle 6 # 55C-42",
+                "acudiente":"Oscar Aguilar",
+                "numero_celular":3114567895,
+                "numero_fijo":"60156895123",
+                "estado":"Retirado",
+                "riesgo":"Bajo"
+            },
+            {
+                "id":5,
+                "nombre":"Gabriela",
+                "apellido":"Castro",
+                "direccion":"Calle 6 # 55C-42",
+                "acudiente":"Eduardo Castro",
+                "numero_celular":3256974361,
+                "numero_fijo":"60157952123",
+                "estado":"Expulsado",
+                "riesgo":"Alto"
+            },
+            {
+                "id":6,
+                "nombre":"Fernando",
+                "apellido":"Velazco",
+                "direccion":"Calle 6 # 55C-42",
+                "acudiente":"Paula Velazco",
+                "numero_celular":3124587654,
+                "numero_fijo":"608744565",
+                "estado":"En proceso de ingreso",
+                "riesgo":"Bajo"
+            },
+            {
+                "id":7,
+                "nombre":"Alejandro",
+                "apellido":"Peña",
+                "direccion":"Calle 6 # 55C-42",
+                "acudiente":"Manuel Peña",
+                "numero_celular":3215478621,
+                "numero_fijo":"601523214",
+                "estado":"Cursando",
+                "riesgo":"Bajo"
+            },
+            {
+                "id":8,
+                "nombre":"Daniela",
+                "apellido":"Ribas",
+                "direccion":"Calle 6 # 55C-42",
+                "acudiente":"Manuel Ribas",
+                "numero_celular":3165421398,
+                "numero_fijo":"6015891458",
+                "estado":"Graduado",
+                "riesgo":"Bajo"
+            },
+            {
+                "id":9,
+                "nombre":"Teresa",
+                "apellido":"Ponse",
+                "direccion":"Calle 6 # 55C-42",
+                "acudiente":"Beatriz Ponse",
+                "numero_celular":3254879635,
+                "numero_fijo":"60156644123",
+                "estado":"Aprobado",
+                "riesgo":"Medio"
+            },
+            {
+                "id":10,
+                "nombre":"Raul",
+                "apellido":"Morales",
+                "direccion":"Calle 6 # 55C-42",
+                "acudiente":"Mario Morales",
+                "numero_celular":3175632487,
+                "numero_fijo":"601565369",
+                "estado":"Inscrito",
+                "riesgo":"Alto"
+            },
+            {
+                "id":11,
+                "nombre":"Jose",
+                "apellido":"Leon",
+                "direccion":"Calle 6 # 55C-42",
+                "acudiente":"Rosario Leon",
+                "numero_celular":3116954876,
+                "numero_fijo":"601261258",
+                "estado":"Aprobado",
+                "riesgo":"Bajo"
+            },
+            {
+                "id":12,
+                "nombre":"Laura",
+                "apellido":"Soto",
+                "direccion":"Calle 6 # 55C-42",
+                "acudiente":"Carlos Soto",
+                "numero_celular":3147647895,
+                "numero_fijo":"601512364",
+                "estado":"Cursando",
+                "riesgo":"Medio"
+            },
+            {
+                "id":13,
+                "nombre":"Patricia",
+                "apellido":"Cardenas",
+                "direccion":"Calle 6 # 55C-42",
+                "acudiente":"Luis Cardenas",
+                "numero_celular":3187532147,
+                "numero_fijo":"6015685874",
+                "estado":"Retirado",
+                "riesgo":"Alto"
+            },
+            {
+                "id":14,
+                "nombre":"Mariana",
+                "apellido":"Miranda",
+                "direccion":"Calle 6 # 55C-42",
+                "acudiente":"Fernanda Miranda",
+                "numero_celular":3147532684,
+                "numero_fijo":"605454369",
+                "estado":"Inscrito",
+                "riesgo":"Medio"
+            },
+            {
+                "id":15,
+                "nombre":"Miguel",
+                "apellido":"Sanchez",
+                "direccion":"Calle 6 # 55C-42",
+                "acudiente":"Eduardo Sanchez",
+                "numero_celular":3198751549,
+                "numero_fijo":"6015985964",
+                "estado":"Aprobado",
+                "riesgo":"Medio"
+            }
+        ]
+    },
+    {
+        "id":3,
+        "grupo":"t3",
+        "campers":[
+            {
+                "id":1,
+                "nombre":"Salvador",
+                "apellido":"Fuentes",
+                "direccion":"Calle 6 # 55C-42",
+                "acudiente":"Marta Fuentes",
+                "numero_celular":3115498726,
+                "numero_fijo":"6045872587",
+                "estado":"Cursando",
+                "riesgo":"Bajo"
+            },
+            {
+                "id":2,
+                "nombre":"Javier",
+                "apellido":"Viñaz",
+                "direccion":"Calle 6 # 55C-42",
+                "acudiente":"Mario Viñaz",
+                "numero_celular":3146953214,
+                "numero_fijo":"6015847",
+                "estado":"En proceso de ingreso",
+                "riesgo":"Medio"
+            },
+            {
+                "id":3,
+                "nombre":"Alfredo",
+                "apellido":"Jimenez",
+                "direccion":"Calle 6 # 55C-42",
+                "acudiente":"Sofia Jimenez",
+                "numero_celular":3159874634,
+                "numero_fijo":"601568852",
+                "estado":"Expulsado",
+                "riesgo":"Bajo"
+            },
+            {
+                "id":4,
+                "nombre":"Alonso",
+                "apellido":"Navarro",
+                "direccion":"Calle 6 # 55C-42",
+                "acudiente":"Oscar Navarro",
+                "numero_celular":3148545412,
+                "numero_fijo":"601568957",
+                "estado":"Retirado",
+                "riesgo":"Bajo"
+            },
+            {
+                "id":5,
+                "nombre":"Alvarado",
+                "apellido":"Barbosa",
+                "direccion":"Calle 6 # 55C-42",
+                "acudiente":"Eduardo Barbosa",
+                "numero_celular":3258965413,
+                "numero_fijo":"601579552",
+                "estado":"Expulsado",
+                "riesgo":"Alto"
+            },
+            {
+                "id":6,
+                "nombre":"Gregory",
+                "apellido":"Delgado",
+                "direccion":"Calle 6 # 55C-42",
+                "acudiente":"Paulina Delgado",
+                "numero_celular":3124587854,
+                "numero_fijo":"608744985",
+                "estado":"En proceso de ingreso",
+                "riesgo":"Bajo"
+            },
+            {
+                "id":7,
+                "nombre":"Jeremy",
+                "apellido":"Alcivar",
+                "direccion":"Calle 6 # 55C-42",
+                "acudiente":"Manuel Alcivar",
+                "numero_celular":3215478453,
+                "numero_fijo":"601523985",
+                "estado":"Cursando",
+                "riesgo":"Bajo"
+            },
+            {
+                "id":8,
+                "nombre":"Ian",
+                "apellido":"Avila",
+                "direccion":"Calle 6 # 55C-42",
+                "acudiente":"Jorge Avila",
+                "numero_celular":3165462134,
+                "numero_fijo":"601589964",
+                "estado":"Graduado",
+                "riesgo":"Bajo"
+            },
+            {
+                "id":9,
+                "nombre":"Jostin",
+                "apellido":"Molina",
+                "direccion":"Calle 6 # 55C-42",
+                "acudiente":"Beatriz Molina",
+                "numero_celular":3154871236,
+                "numero_fijo":"601566418",
+                "estado":"Aprobado",
+                "riesgo":"Medio"
+            },
+            {
+                "id":10,
+                "nombre":"Melany",
+                "apellido":"Cedeño",
+                "direccion":"Calle 6 # 55C-42",
+                "acudiente":"Mario Cedeño",
+                "numero_celular":3175689654,
+                "numero_fijo":"601565456",
+                "estado":"Inscrito",
+                "riesgo":"Alto"
+            },
+            {
+                "id":11,
+                "nombre":"Matias",
+                "apellido":"Centeno",
+                "direccion":"Calle 6 # 55C-42",
+                "acudiente":"Rosario Centeno",
+                "numero_celular":3116955632,
+                "numero_fijo":"601261245",
+                "estado":"Aprobado",
+                "riesgo":"Bajo"
+            },
+            {
+                "id":12,
+                "nombre":"Francisco",
+                "apellido":"Soledispa",
+                "direccion":"Calle 6 # 55C-42",
+                "acudiente":"Carlos Soledispa",
+                "numero_celular":3147647234,
+                "numero_fijo":"60151785",
+                "estado":"Cursando",
+                "riesgo":"Medio"
+            },
+            {
+                "id":13,
+                "nombre":"Johan",
+                "apellido":"Fernandez",
+                "direccion":"Calle 6 # 55C-42",
+                "acudiente":"Luis Fernandez",
+                "numero_celular":3187535632,
+                "numero_fijo":"6015685575",
+                "estado":"Retirado",
+                "riesgo":"Alto"
+            },
+            {
+                "id":14,
+                "nombre":"Keyla",
+                "apellido":"Gomez",
+                "direccion":"Calle 6 # 55C-42",
+                "acudiente":"Fernanda Gomez",
+                "numero_celular":3147534521,
+                "numero_fijo":"605454159",
+                "estado":"Inscrito",
+                "riesgo":"Medio"
+            },
+            {
+                "id":15,
+                "nombre":"Alisson",
+                "apellido":"Haro",
+                "direccion":"Calle 6 # 55C-42",
+                "acudiende":"Eduardo Haro",
+                "numero_celular":3198751753,
+                "numero_fijo":"6015985852",
+                "estado":"Aprobado",
+                "riesgo":"Medio"
+            }
+        ]
+    },
+    {
+        "id":1,
+        "nombre":"Johlver",
+        "ruta":"Ruta NodeJS",
+        "horario":"6am a 10am"
+    },
+    {
+        "id":2,
+        "nombre":"Pedro",
+        "ruta":"Ruta Java",
+        "horario":"10am a 2pm"
+    },
+    {
+        "id":3,
+        "nombre":"Miguel",
+        "ruta":"Ruta NetCore",
+        "horario":"2pm a 6pm"
+    },
+    {
+        "id":4,
+        "nombre":"Juank",
+        "ruta":"Ruta NetCore",
+        "horario":"6pm a 10pm"
+    },
+    {
+        "id":5,
+        "nombre":"Isa",
+        "ruta":"Ruta Java",
+        "horario":"6am a 10am"
+    },
+    {
+        "id":1,
+        "nombre":"Stiven",
+        "apellido":"Carvajal",
+        "cargo":"Coordinador"
+    },
+    {
+        "camperID":1,
+        "rutaNombre":"Ruta Java",
+        "fechaI":"19-02-2024",
+        "fechaF":"19-02-2025",
+        "salon":"Salón Sputnik"
+    },
+    {
+        "camperID":2,
+        "rutaNombre":"Ruta NetCore",
+        "fechaI":"19-02-2024",
+        "fechaF":"19-02-2025",
+        "salon":"Salón Apolo"
+    },
+    {
+        "camperID":3,
+        "rutaNombre":"Ruta NodeJS",
+        "fechaI":"19-02-2024",
+        "fechaF":"19-02-2025",
+        "salon":"Salón Artemis"
+    }
+]

@@ -1,4 +1,45 @@
 import json
+archivo_json = "campus.json"
+with open(archivo_json, encoding="utf-8")as file:
+    datos_json = json.load(file)
+print(datos_json)
+
+def menu():
+    while True:
+
+        print("-----------MENÚ----------")
+        print("1. Campers")
+        print("2. Rutas de entrenamiento")
+        print("3. Trainers")
+        print("4. Matricular campers")
+        print("5. Coordinador")
+        print("6. Asignar trainers")
+        print("7. Evaluar modulo")
+        print("8. Reportes")
+        print("9. Salir")
+        opc=input("Seleccione una opción: ")
+        if opc == "1":
+           campers()
+        elif opc =="2":
+            ruta()
+        elif opc =="3":
+            trainers()
+        elif opc =="4":
+            matricula()
+        elif opc =="5":
+            coordinador()
+        elif opc =="6":
+            trainersTrabajando()
+        elif opc =="7":
+            campersModuloRuta()
+        elif opc =="8":
+            reportes()
+        elif opc =="9":
+            print("Saliendo del programa")
+            break
+        else:
+            print("Esta opción no existe, por favor elige otra: ")
+
 class campers:
     def __init__(self, id, nombre, apellido, direccion, acudiente, numero_celular, numero_fijo, estado, riesgo):
         self.id=id
@@ -136,6 +177,40 @@ def reportes():
                         print("\nCamper por modulo y ruta: ")
                         for camper in campersModuloRuta:
                             print(f"{camper.nombre}{camper.apellido}")
+def menu():
+    while True:
+        print("-----------MENÚ----------")
+        print("1. Campers")
+        print("2. Rutas de entrenamiento")
+        print("3. Trainers")
+        print("4. Matricular campers")
+        print("5. Coordinador")
+        print("6. Asignar trainers")
+        print("7. Evaluar modulo")
+        print("8. Reportes")
+        print("9. Salir")
+        opc=input("Seleccione una opción: ")
+        if opc == "1":
+           campers()
+        elif opc =="2":
+            ruta()
+        elif opc =="3":
+            trainers()
+        elif opc =="4":
+            matricula()
+        elif opc =="5":
+            coordinador()
+        elif opc =="6":
+            trainersTrabajando()
+        elif opc =="7":
+            campersModuloRuta()
+        elif opc =="8":
+            reportes()
+        elif opc =="9":
+            print("Saliendo del programa")
+            break
+        else:
+            print("Esta opción no existe, por favor elige otra: ")
 
 
         
