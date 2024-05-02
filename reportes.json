@@ -1,8 +1,8 @@
 [
     {
         "id":1,
-        "grupo":"t1",
-        "campers":[
+        "rutaEntrenamiento":"Ruta NodeJS",
+        "campersInscritos":[
             {
                 "id":1,
                 "nombre":"Luis",
@@ -172,8 +172,8 @@
     },
     {
         "id":2,
-        "grupo":"t2",
-        "campers":[
+        "rutaEntrenamiento":"Ruta Java",
+        "campersInscritos":[
             {
                 "id":1,
                 "nombre":"Anne",
@@ -343,8 +343,8 @@
     },
     {
         "id":3,
-        "grupo":"t3",
-        "campers":[
+        "rutaEntrenamiento":"Ruta NetCore",
+        "campersInscritos":[
             {
                 "id":1,
                 "nombre":"Salvador",
@@ -511,97 +511,5 @@
                 "riesgo":"Medio"
             }
         ]
-    },
-    {
-        "id":4,
-        "grupo":"trainers",
-        "trainers":[
-            {
-                "id":1,
-                "nombre":"Johlver",
-                "ruta":"Ruta NodeJS",
-                "horario":"6am a 10am"
-            },
-            {
-                "id":2,
-                "nombre":"Pedro",
-                "ruta":"Ruta Java",
-                "horario":"10am a 2pm"
-            },
-            {
-                "id":3,
-                "nombre":"Miguel",
-                "ruta":"Ruta NetCore",
-                "horario":"2pm a 6pm"
-            },
-            {
-                "id":4,
-                "nombre":"Juank",
-                "ruta":"Ruta NetCore",
-                "horario":"6pm a 10pm"
-            },
-            {
-                "id":5,
-                "nombre":"Isa",
-                "ruta":"Ruta Java",
-                "horario":"6am a 10am"
-            },
-            {
-                "id":1,
-                "nombre":"Stiven",
-                "apellido":"Carvajal",
-                "cargo":"Coordinador"
-            },
-            {
-                "camperID":1,
-                "rutaNombre":"Ruta Java",
-                "fechaI":"19-02-2024",
-                "fechaF":"19-02-2025",
-                "salon":"Salón Sputnik"
-            },
-            {
-                "camperID":2,
-                "rutaNombre":"Ruta NetCore",
-                "fechaI":"19-02-2024",
-                "fechaF":"19-02-2025",
-                "salon":"Salón Apolo"
-            },
-            {
-                "camperID":3,
-                "rutaNombre":"Ruta NodeJS",
-                "fechaI":"19-02-2024",
-                "fechaF":"19-02-2025",
-                "salon":"Salón Artemis"
-            }
-
-        ]
-    },
-    {
-        "id":5,
-        "grupo":"ruta",
-        "ruta":[
-            {
-                "id":1,
-                "nombre":"ruta NodeJS",
-                "modulo":"Fundamentos de programacion (introduccion a la algoritmia, Pseint, Python)",
-                "capacidad_maxima":33
-
-            },
-            {
-                "id":2,
-                "nombre":"ruta Java",
-                "modulo":"programacion web(HTML, CSS, Bootstrap)",
-                "capacidad_maxima":33
-            },
-            {
-                "id":3,
-                "nombre":"ruta NetCore",
-                "modulo":"programacion formal",
-                "SGDB_principal":"Java",
-                "SGDB_alternativo":"JavaScript, C#",
-                "capacidad_maxima":33
-            }
-        ]
     }
-    
 ]

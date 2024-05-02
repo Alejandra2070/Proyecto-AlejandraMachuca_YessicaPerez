@@ -32,6 +32,7 @@ class matricula:
         self.salon=salon
 class coordinador:
     def __init__(self, id, nombre, apellido, cargo):
+        def
         self.id=id
         self.nombre=nombre
         self.apellido=apellido

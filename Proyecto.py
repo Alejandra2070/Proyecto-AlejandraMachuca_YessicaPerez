@@ -22,12 +22,12 @@ class campers:
         self.riesgo=riesgo
         print(campers)
 class trainers:
-    def __init__(self, id, nombre, ruta, horario):
+    def __init__(self, id, nombre, rutaEntrenamiento, horario):
         self.id=id
         self.nombre=nombre
-        self.ruta=ruta
+        self.rutaEntrenamiento=rutaEntrenamiento
         self.horario=horario
-class ruta:
+class rutaEntrenamiento:
     def __init__(self, nombre, modulos, SGDB_principal, SGDB_alternativo, capacidad_maxima):
         self.nombre=nombre
         self.modulos=modulos
@@ -41,12 +41,32 @@ class matricula:
         self.fechaI=fechaI
         self.fechaF=fechaF
         self.salon=salon
+    def asignarCamper(self, campers, ruta, fechaI, fechaF, salon):
+        if ruta.asignarCamper(campers):
+            print(f"Camper {campers.nombre} fue asignado a la ruta {ruta.nombre}")
+        else:
+            print("No existen cupos disponibles para esta ruta")
 class coordinador:
     def __init__(self, id, nombre, apellido, cargo):
         self.id=id
         self.nombre=nombre
         self.apellido=apellido
         self.cargo=cargo
+    def subirNota(self, campers, notaTeorica, notaPractica):
+        promedio=(notaTeorica+notaPractica)/2
+        if promedio>=60:
+            campers.estado="aprobado"
+            print(f"Nota registrada{campers.nombre}:teorica:{notaTeorica},practica:{notaPractica}aprobado")
+        else:
+            print(f"Nota registrada{campers.nombre}:teorica:{notaTeorica},practica:{notaPractica}no aprobado")
+class reporte:
+    def __init__(self, id, rutaEntrenamiento, campersInscritos):
+        self.id=id
+        self.rutaEntrenamiento=rutaEntrenamiento
+        self.campersInscritos=campersInscritos
+    def listarCampersInscritos(self, rutaEntrenamiento):
+        print(f"Campers inscritos en la ruta de entrenamiento {rutaEntrenamiento.nombre}")
+        print(rutaEntrenamiento.listarCampers())
 def subirDatos(nombreArchivo):
     try:
         with open(nombreArchivo, "r") as file:
@@ -148,64 +168,104 @@ def reportes():
                         for camper in campersModuloRuta:
                             print(f"{camper.nombre}{camper.apellido}")
 
-print("-----------MENÚ----------")
-print("1. Campers")
-print("2. Rutas de entrenamiento")
-print("3. Trainers")
-print("4. Matricular campers")
-print("5. Coordinador")
-print("6. Asignar trainers")
-print("7. Evaluar modulo")
-print("8. Reportes")
-print("9. Salir")
-x=input("Seleccione una opción: ")
-miinfo=[]
-if x == "1":
-    miinfo=abrirarchivo()
-    for i in miinfo[0]["campers"]:
+while True:
+
+    print("-----------MENÚ----------")
+    print("1. Subir datos del camper")
+    print("2. Datos nuevos del camper")
+    print("3. Campers nuevos")
+    print("4. Inscripción de campers")
+    print("5. Estado de los campers")
+    print("6. Campers aprobados")
+    print("7. Matriculas nuevas de los campers")
+    print("8. Campers con bajo rendimiento")
+    print("9. Rendimiento calculado")
+    print("10. Ruta de los trainers")
+    print("11. Campers ruta")
+    print("12. Trainers trabajando")
+    print("13. Módulo de los campers")
+    print("14. Reportes")
+    print("15. Salir")
+    x=input("Seleccione una opción: ")
+    miInfo=[]
+    if x == "1":
+        miInfo=abrirarchivo()
+        camperID= input("Ingrese el id del camper: ")
+        nombre= input("Ingrese el nombre del camper: ")
+        apellido= input("Ingrese el apellido del camper: ")
+        direccion= input("Ingrese la dirección del camper: ")
+        acudiente= input("Ingrese el nombre y el apellido de el acudiente del camper: ")
+        numero_celular= input("Ingrese el número de teléfono del camper: ")
+        numero_fijo= input("Ingrese el número fijo del camper: ")
+        estado= input("Ingrese el estado del camper: ")
+        riesgo= input("Ingrese el riesgo del camper: ")
+        camperNuevo = campers(id, nombre, apellido, direccion, acudiente, numero_celular, numero_fijo, estado, riesgo)
+        inscripcion(camperNuevo, "campus.json")
+        print("El camper fue inscrito satisfactoriamente.\n")
+
+    elif x == "2":
+        miInfo=abrirarchivo()
+        datos= input("Ingrese los datos nuevos(inscrito, aprobado, cursando, graduado, en proceso de ingreso, expulsado, retirado)")
+        datosNuevos=campers(estado, "campus.json")
+
+    elif x =="3":
+        nuevos= input("Ingrese el nuevo nombre del camper: ")
+        camperNuevo= campers(nuevos, "campus.json")
+
+    elif x =="4":
+        inscritos= input("Los campers inscritos son: ")
+        inscripcion=campers(inscritos, "campus.json")
+
+    elif x =="5":
+        estados=input("Los campers por estados son: ")
+        estadoCampers=campers(estados, "campus.json")
+
+    elif x =="6":
+        aprobados= input("Los campers aprobados son: ")
+        campersAprobados=(aprobados, "campus.json")
+
+    elif x =="7":
+        matriculas= input("Nuevas matriculas: ")
+        matriculaNueva=(matriculas, "campus.json")
+
+    elif x =="8":
+        rendimiento= input("Rendimiento de los campers: ")
+        campersRendimientoBajo=(rendimiento, "campus.json")
+
+    elif x =="9":
+        calculado= input("Rendimiento calculado de los campers: ")
+        rendimientoCalculado=(calculado, "campus.json")
+
+    elif x =="10":
+        trainerRuta= input("Ruta de los trainers: ")
+        campersTrainerRuta=(trainerRuta, "campus.json")
+
+    elif x =="11":
+        estadoRuta= input("Estado de los campers en la ruta: ")
+        campersEstadoRuta=(estadoRuta, "campus.json")
+
+    elif x =="12":
+        trabajando= input("Trainers que se encuentran laborando: ")
+        trainersTrabajando=(trabajando, "campus.json")
+
+    elif x =="13":
+        moduloRuta= input("Modulos disponibles para los campers: ")
+        campersModuloRuta=(moduloRuta, "campus.json")
+
+    elif x =="14":
+        reportesCampers= input("Reporte de los campers: ")
+        reportes=(reportesCampers, "campus.json")
+
+    elif x =="15":
+        print("Saliendo del programa")
+        print("Saliendo..............")
+        print("Has salido exitosamente del programa")
         
-        print("----------------------")
-        print("ID:", i["id"])
-        print("Nombre:",i["nombre"])
-        print("Apellido:", i["apellido"])
-        print("Direccion:", i["direccion"])
-        print("Acudiente:", i["acudiente"])
-        print("Numero de telefono:", i["numero_celular"])
-        print("Numero fijo:", i["numero_fijo"])
-        print("Estado:", i["estado"])
-        print("Riesgo:", i["riesgo"])
-        print("------------------------------")
-elif x =="2":
-    miinfo=abrirarchivo()
-    for i in miinfo[0]["ruta"]:
-        print("-------------------------")
-        print("ID:", i["id"])
-        print("Nombre:", i["nombre"])
-        print("Modulo:", i["modulo"])
-        print("Capacidad maxima:", i["capacidad_maxima"])
-        print("-----------------------------")
-elif x =="3":
-    trainers()
-elif x =="4":
-    matricula()
-elif x =="5":
-    coordinador()
-elif x =="6":
-    trainersTrabajando()
-elif x =="7":
-    campersModuloRuta()
-elif x =="8":
-    reportes()
-elif x =="9":
-    print("Saliendo del programa")
-    print("Saliendo..............")
-    print("Has salido exitosamente del programa")
-    
-else:
-    print("Esta opción no existe, por favor elige otra: ")
+    else:
+        print("Esta opción no existe, por favor elige otra: ")
 
 
 
-        
-        
+            
+            
 
