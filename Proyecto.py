@@ -1,44 +1,13 @@
 import json
-archivo_json = "campus.json"
-with open(archivo_json, encoding="utf-8")as file:
-    datos_json = json.load(file)
-print(datos_json)
+def abrirarchivo():
+    mijson=[]
+    with open("campus.json","r") as openfile:
+        mijson=json.load(openfile)
+    return mijson
 
-def menu():
-    while True:
-
-        print("-----------MENÚ----------")
-        print("1. Campers")
-        print("2. Rutas de entrenamiento")
-        print("3. Trainers")
-        print("4. Matricular campers")
-        print("5. Coordinador")
-        print("6. Asignar trainers")
-        print("7. Evaluar modulo")
-        print("8. Reportes")
-        print("9. Salir")
-        opc=input("Seleccione una opción: ")
-        if opc == "1":
-           campers()
-        elif opc =="2":
-            ruta()
-        elif opc =="3":
-            trainers()
-        elif opc =="4":
-            matricula()
-        elif opc =="5":
-            coordinador()
-        elif opc =="6":
-            trainersTrabajando()
-        elif opc =="7":
-            campersModuloRuta()
-        elif opc =="8":
-            reportes()
-        elif opc =="9":
-            print("Saliendo del programa")
-            break
-        else:
-            print("Esta opción no existe, por favor elige otra: ")
+print("")
+print("----------BIENVENIDOS---------")
+print("")
 
 class campers:
     def __init__(self, id, nombre, apellido, direccion, acudiente, numero_celular, numero_fijo, estado, riesgo):
@@ -51,6 +20,7 @@ class campers:
         self.numero_fijo=numero_fijo
         self.estado=estado
         self.riesgo=riesgo
+        print(campers)
 class trainers:
     def __init__(self, id, nombre, ruta, horario):
         self.id=id
@@ -58,10 +28,10 @@ class trainers:
         self.ruta=ruta
         self.horario=horario
 class ruta:
-    def __init__(self, nombre, modulos, SGSB_principal, SGDB_alternativo, capacidad_maxima):
+    def __init__(self, nombre, modulos, SGDB_principal, SGDB_alternativo, capacidad_maxima):
         self.nombre=nombre
         self.modulos=modulos
-        self.SGDB_principal=SGSB_principal
+        self.SGDB_principal=SGDB_principal
         self.SGDB_alternativo=SGDB_alternativo
         self.capacidad_maxima=capacidad_maxima
 class matricula:
@@ -89,29 +59,29 @@ def datosNuevos(datos, nombreArchivo):
 def camperNuevo(camper, nombreArchivo):
     camper=subirDatos(nombreArchivo)
     camper.append(camper.__dict__)
-    datosNuevos(camper, nombreArchivo)
-def inscripcion(camper, nombreArchivo):
-  camperNuevo(camper, nombreArchivo)
+    datosNuevos(campers, nombreArchivo)
+def inscripcion(campers, nombreArchivo):
+  camperNuevo(campers, nombreArchivo)
 def estadoCampers(estado, nombreArchivo):
     camper=subirDatos(nombreArchivo)
-    return[camper(camper)for camper in campers if camper["estado"]==estado]
+    return[camper(campers)for camper in campers if campers["estado"]==estado]
 def campersAprobados(nombreArchivo):
  campers=subirDatos(nombreArchivo)
- return[camper(camper)for camper in campers if camper ["estado"]=="aprobado"]
+ return[camper(campers)for camper in campers if campers["estado"]=="aprobado"]
 def matriculaNueva(matricula, nombreArchivo):
     matriculas=subirDatos(nombreArchivo)
     matriculas.append(matricula.__dict__)
     datosNuevos(matriculas, nombreArchivo)
 def campersRendimientoBajo(matriculasArchivo, campersArchivo):
     matriculas=subirDatos(matriculasArchivo)
-    campers=subirDatos(campersArchivo)
+    camper=subirDatos(campersArchivo)
     campersRendimientoBajo=[]
     for matricula in matriculas:
-        camper=next((camper for camper in campers if camper["id"]==matricula["camperID"]), None)
+        camper=next((camper for camper in campers if campers["id"]==matricula["camperID"]), None)
         if camper:
             rendimiento=rendimientoCalculado(matricula)
             if rendimiento<60:
-                campersRendimientoBajo.append(camper(camper))
+                campersRendimientoBajo.append(camper(campers))
     return campersRendimientoBajo
 def rendimientoCalculado (matricula):
     return 55
@@ -177,40 +147,63 @@ def reportes():
                         print("\nCamper por modulo y ruta: ")
                         for camper in campersModuloRuta:
                             print(f"{camper.nombre}{camper.apellido}")
-def menu():
-    while True:
-        print("-----------MENÚ----------")
-        print("1. Campers")
-        print("2. Rutas de entrenamiento")
-        print("3. Trainers")
-        print("4. Matricular campers")
-        print("5. Coordinador")
-        print("6. Asignar trainers")
-        print("7. Evaluar modulo")
-        print("8. Reportes")
-        print("9. Salir")
-        opc=input("Seleccione una opción: ")
-        if opc == "1":
-           campers()
-        elif opc =="2":
-            ruta()
-        elif opc =="3":
-            trainers()
-        elif opc =="4":
-            matricula()
-        elif opc =="5":
-            coordinador()
-        elif opc =="6":
-            trainersTrabajando()
-        elif opc =="7":
-            campersModuloRuta()
-        elif opc =="8":
-            reportes()
-        elif opc =="9":
-            print("Saliendo del programa")
-            break
-        else:
-            print("Esta opción no existe, por favor elige otra: ")
+
+print("-----------MENÚ----------")
+print("1. Campers")
+print("2. Rutas de entrenamiento")
+print("3. Trainers")
+print("4. Matricular campers")
+print("5. Coordinador")
+print("6. Asignar trainers")
+print("7. Evaluar modulo")
+print("8. Reportes")
+print("9. Salir")
+x=input("Seleccione una opción: ")
+miinfo=[]
+if x == "1":
+    miinfo=abrirarchivo()
+    for i in miinfo[0]["campers"]:
+        
+        print("----------------------")
+        print("ID:", i["id"])
+        print("Nombre:",i["nombre"])
+        print("Apellido:", i["apellido"])
+        print("Direccion:", i["direccion"])
+        print("Acudiente:", i["acudiente"])
+        print("Numero de telefono:", i["numero_celular"])
+        print("Numero fijo:", i["numero_fijo"])
+        print("Estado:", i["estado"])
+        print("Riesgo:", i["riesgo"])
+        print("------------------------------")
+elif x =="2":
+    miinfo=abrirarchivo()
+    for i in miinfo[0]["ruta"]:
+        print("-------------------------")
+        print("ID:", i["id"])
+        print("Nombre:", i["nombre"])
+        print("Modulo:", i["modulo"])
+        print("Capacidad maxima:", i["capacidad_maxima"])
+        print("-----------------------------")
+elif x =="3":
+    trainers()
+elif x =="4":
+    matricula()
+elif x =="5":
+    coordinador()
+elif x =="6":
+    trainersTrabajando()
+elif x =="7":
+    campersModuloRuta()
+elif x =="8":
+    reportes()
+elif x =="9":
+    print("Saliendo del programa")
+    print("Saliendo..............")
+    print("Has salido exitosamente del programa")
+    
+else:
+    print("Esta opción no existe, por favor elige otra: ")
+
 
 
         
