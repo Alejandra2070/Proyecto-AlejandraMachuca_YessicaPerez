@@ -5,10 +5,6 @@ def abrirarchivo():
         mijson=json.load(openfile)
     return mijson
 
-print("")
-print("----------BIENVENIDOS---------")
-print("")
-
 class campers:
     def __init__(self, id, nombre, apellido, direccion, acudiente, numero_celular, numero_fijo, estado, riesgo):
         self.id=id
@@ -169,25 +165,52 @@ def reportes():
                             print(f"{camper.nombre}{camper.apellido}")
 
 while True:
-
-    print("-----------MENÚ----------")
-    print("1. Subir datos del camper")
-    print("2. Datos nuevos del camper")
-    print("3. Campers nuevos")
-    print("4. Inscripción de campers")
-    print("5. Estado de los campers")
-    print("6. Campers aprobados")
-    print("7. Matriculas nuevas de los campers")
-    print("8. Campers con bajo rendimiento")
-    print("9. Rendimiento calculado")
-    print("10. Ruta de los trainers")
-    print("11. Campers ruta")
-    print("12. Trainers trabajando")
-    print("13. Módulo de los campers")
-    print("14. Reportes")
-    print("15. Salir")
-    x=input("Seleccione una opción: ")
+    print("")
+    print("----------BIENVENIDOS---------")
+    print("")
+    print("---------MENÚ----------")
+    print("1. Campers")
+    print("2. Trainers")
+    print("3. Coordinador")
+    print("4. Salir")
+    opc=input("Elije una de nuestras opciones: ")
     miInfo=[]
+    mijson = abrirarchivo()
+    if opc ==1:
+        print("")
+    usuario=int(input("Ingrese su número de identificación: "))
+    print("")
+    contraseña = input("Ingrese su contraseña: ")
+    print("")
+    for i in mijson:
+        for a in ["campers"]:
+            if a ["id"] == usuario:
+                if "contraseña" in a and a["contraseña"] == contraseña:
+                    print("Inicio de sesión exitoso", a["nombre"])
+    print("")
+
+    if opc ==2:
+
+#######################
+
+        print("-----------MENÚ----------")
+        print("1. Subir datos del camper")
+        print("2. Datos nuevos del camper")
+        print("3. Campers nuevos")
+        print("4. Inscripción de campers")
+        print("5. Estado de los campers")
+        print("6. Campers aprobados")
+        print("7. Matriculas nuevas de los campers")
+        print("8. Campers con bajo rendimiento")
+        print("9. Rendimiento calculado")
+        print("10. Ruta de los trainers")
+        print("11. Campers ruta")
+        print("12. Trainers trabajando")
+        print("13. Módulo de los campers")
+        print("14. Reportes")
+        print("15. Salir")
+        x=input("Seleccione una opción: ")
+        miInfo=[]
     if x == "1":
         miInfo=abrirarchivo()
         camperID= input("Ingrese el id del camper: ")

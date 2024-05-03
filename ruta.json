@@ -19,9 +19,21 @@
             {
                 "id":3,
                 "nombre":"ruta NetCore",
-                "modulo":"programacion formal",
+                "modulo":"programacion formal(Java, JavaScript, C#)",
+                "capacidad_maxima":33
+            },
+            {
+                "id":4,
+                "nombre":"ruta NodeJS",
+                "modulo":"Base de datos",
                 "SGDB_principal":"Java",
                 "SGDB_alternativo":"JavaScript, C#",
+                "capacidad_maxima":33
+            },
+            {
+                "id":5,
+                "nombre":"ruta Java",
+                "modulo":"Backend(NetCore, Spring Boot, NodeJS, Express",
                 "capacidad_maxima":33
             }
         ]
