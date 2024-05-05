@@ -1,40 +1,48 @@
 [
     {
-        "id":1,
-        "grupo":"ruta",
-        "ruta":[
+        "id": 1,
+        "grupo": "ruta",
+        "ruta": [
             {
-                "id":1,
-                "nombre":"ruta NodeJS",
-                "modulo":"Fundamentos de programacion (introduccion a la algoritmia, Pseint, Python)",
-                "capacidad_maxima":33
-
+                "id": 1,
+                "nombre": "ruta NodeJS",
+                "modulo": "Fundamentos de programacion (introduccion a la algoritmia, Pseint, Python)",
+                "capacidad_maxima": 33
             },
             {
-                "id":2,
-                "nombre":"ruta Java",
-                "modulo":"programacion web(HTML, CSS, Bootstrap)",
-                "capacidad_maxima":33
+                "id": 2,
+                "nombre": "ruta Java",
+                "modulo": "programacion web(HTML, CSS, Bootstrap)",
+                "capacidad_maxima": 33
             },
             {
-                "id":3,
-                "nombre":"ruta NetCore",
-                "modulo":"programacion formal(Java, JavaScript, C#)",
-                "capacidad_maxima":33
+                "id": 3,
+                "nombre": "ruta NetCore",
+                "modulo": "programacion formal(Java, JavaScript, C#)",
+                "capacidad_maxima": 33
             },
             {
-                "id":4,
-                "nombre":"ruta NodeJS",
-                "modulo":"Base de datos",
-                "SGDB_principal":"Java",
-                "SGDB_alternativo":"JavaScript, C#",
-                "capacidad_maxima":33
+                "id": 4,
+                "nombre": "ruta NodeJS",
+                "modulo": "Base de datos",
+                "SGDB_principal": "Java",
+                "SGDB_alternativo": "JavaScript, C#",
+                "capacidad_maxima": 33
             },
             {
-                "id":5,
-                "nombre":"ruta Java",
-                "modulo":"Backend(NetCore, Spring Boot, NodeJS, Express",
-                "capacidad_maxima":33
+                "id": 5,
+                "nombre": "ruta Java",
+                "modulo": "Backend(NetCore, Spring Boot, NodeJS, Express",
+                "capacidad_maxima": 33
+            },
+            {
+                "id": 4,
+                "nombre": "pruebas",
+                "modulo": [
+                    "hola",
+                    " holi"
+                ],
+                "capacidad_maxima": 33
             }
         ]
     }
