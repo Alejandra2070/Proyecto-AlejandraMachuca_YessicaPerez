@@ -12,8 +12,9 @@
                 "acudiente": "Pedro Caicedo",
                 "numero_celular": 3243293371,
                 "numero_fijo": "6015689286",
-                "estado": "Aprobado",
-                "riesgo": "Bajo"
+                "estado": "Inscrito",
+                "riesgo": "Bajo",
+                "grupo": "t1"
             },
             {
                 "id": 2,
@@ -25,8 +26,9 @@
                 "acudiente": "Juan Barrera",
                 "numero_celular": 3123702377,
                 "numero_fijo": "60156861023",
-                "estado": "Cursando",
-                "riesgo": "Medio"
+                "estado": "Inscrito",
+                "riesgo": "Medio",
+                "grupo": "t1"
             },
             {
                 "id": 3,
@@ -39,7 +41,8 @@
                 "numero_celular": 3232483683,
                 "numero_fijo": "60156887212",
                 "estado": "En proceso de ingreso",
-                "riesgo": "Bajo"
+                "riesgo": "Bajo",
+                "grupo": "t1"
             },
             {
                 "id": 4,
@@ -52,7 +55,8 @@
                 "numero_celular": 3225082501,
                 "numero_fijo": "60156895978",
                 "estado": "Aprobado",
-                "riesgo": "Bajo"
+                "riesgo": "Bajo",
+                "grupo": "t1"
             },
             {
                 "id": 5,
@@ -65,29 +69,12 @@
                 "numero_celular": 3123154497,
                 "numero_fijo": "6015795223",
                 "estado": "Cursando",
-                "riesgo": "Medio"
+                "riesgo": "Medio",
+                "grupo": "t1"
             },
             {
                 "id": 6,
-                "usuario": 6,
-                "contrasena": "leidyM",
-                "nombre": "Leidy",
-                "apellido": "Machuca",
-                "direccion": "1-70",
-                "acudiente": "Maria Machuca",
-                "numero_celular": 3114567890,
-                "numero_fijo": "8765432218",
-                "estado": "Graduado",
-                "riesgo": "Bajo"
-            }
-        ]
-    },
-    {
-        "grupo": "t2",
-        "campers": [
-            {
-                "id": 1,
-                "usuario": "1",
+                "usuario": "6",
                 "contrasena": "anneO",
                 "nombre": "Anne",
                 "apellido": "Ortega",
@@ -96,11 +83,12 @@
                 "numero_celular": 3158763254,
                 "numero_fijo": "6045876254",
                 "estado": "Cursando",
-                "riesgo": "Bajo"
+                "riesgo": "Bajo",
+                "grupo": "t2"
             },
             {
-                "id": 2,
-                "usuario": "2",
+                "id": 7,
+                "usuario": "7",
                 "contrasena": "danielM",
                 "nombre": "Daniel",
                 "apellido": "Mendez",
@@ -109,11 +97,12 @@
                 "numero_celular": 3198532145,
                 "numero_fijo": "601545872",
                 "estado": "En proceso de ingreso",
-                "riesgo": "Medio"
+                "riesgo": "Medio",
+                "grupo": "t2"
             },
             {
-                "id": 3,
-                "usuario": "3",
+                "id": 8,
+                "usuario": "8",
                 "contrasena": "pabloD",
                 "nombre": "Pablo",
                 "apellido": "Delgado",
@@ -122,11 +111,12 @@
                 "numero_celular": 3245864793,
                 "numero_fijo": "60156887145",
                 "estado": "Expulsado",
-                "riesgo": "Bajo"
+                "riesgo": "Bajo",
+                "grupo": "t2"
             },
             {
-                "id": 4,
-                "usuario": "4",
+                "id": 9,
+                "usuario": "9",
                 "contrasena": "carolinaA",
                 "nombre": "Carolina",
                 "apellido": "Aguilar",
@@ -135,11 +125,12 @@
                 "numero_celular": 3114567895,
                 "numero_fijo": "60156895123",
                 "estado": "Retirado",
-                "riesgo": "Bajo"
+                "riesgo": "Bajo",
+                "grupo": "t2"
             },
             {
-                "id": 5,
-                "usuario": "5",
+                "id": 10,
+                "usuario": "10",
                 "contrasena": "gabrielaC",
                 "nombre": "Gabriela",
                 "apellido": "Castro",
@@ -148,16 +139,12 @@
                 "numero_celular": 3256974361,
                 "numero_fijo": "60157952123",
                 "estado": "Expulsado",
-                "riesgo": "Alto"
-            }
-        ]
-    },
-    {
-        "grupo": "t3",
-        "campers": [
+                "riesgo": "Alto",
+                "grupo": "t2"
+            },
             {
-                "id": 1,
-                "usuario": "1",
+                "id": 11,
+                "usuario": "11",
                 "contrasena": "salvadorF",
                 "nombre": "Salvador",
                 "apellido": "Fuentes",
@@ -166,11 +153,12 @@
                 "numero_celular": 3115498726,
                 "numero_fijo": "6045872587",
                 "estado": "Cursando",
-                "riesgo": "Bajo"
+                "riesgo": "Bajo",
+                "grupo": "t3"
             },
             {
-                "id": 2,
-                "usuario": "2",
+                "id": 12,
+                "usuario": "12",
                 "contrasena": "javierV",
                 "nombre": "Javier",
                 "apellido": "Viaz",
@@ -179,11 +167,12 @@
                 "numero_celular": 3146953214,
                 "numero_fijo": "6015847",
                 "estado": "En proceso de ingreso",
-                "riesgo": "Medio"
+                "riesgo": "Medio",
+                "grupo": "t3"
             },
             {
-                "id": 3,
-                "usuario": "3",
+                "id": 13,
+                "usuario": "13",
                 "contrasena": "alfredoJ",
                 "nombre": "Alfredo",
                 "apellido": "Jimenez",
@@ -192,11 +181,12 @@
                 "numero_celular": 3159874634,
                 "numero_fijo": "601568852",
                 "estado": "Expulsado",
-                "riesgo": "Bajo"
+                "riesgo": "Bajo",
+                "grupo": "t3"
             },
             {
-                "id": 4,
-                "usuario": "4",
+                "id": 14,
+                "usuario": "14",
                 "contrasena": "alonsoN",
                 "nombre": "Alonso",
                 "apellido": "Navarro",
@@ -205,11 +195,12 @@
                 "numero_celular": 3148545412,
                 "numero_fijo": "601568957",
                 "estado": "Retirado",
-                "riesgo": "Bajo"
+                "riesgo": "Bajo",
+                "grupo": "t3"
             },
             {
-                "id": 5,
-                "usuario": "5",
+                "id": 15,
+                "usuario": "15",
                 "contrasena": "alvaradoB",
                 "nombre": "Alvarado",
                 "apellido": "Barbosa",
@@ -218,9 +209,11 @@
                 "numero_celular": 3258965413,
                 "numero_fijo": "601579552",
                 "estado": "Expulsado",
-                "riesgo": "Alto"
+                "riesgo": "Alto",
+                "grupo": "t3"
             }
         ],
+        "grupos":"trainers",
         "trainers": [
             {
                 "id": 1,
@@ -251,24 +244,39 @@
                 "nombre": "Isa",
                 "ruta": "Ruta Java",
                 "horario": "6am a 10am"
+            },
+            {
+                "id": 6,
+                "nombre": "Yessica",
+                "ruta": "Ruta NodeJS",
+                "horario": "10am a 2pm"
+            },
+            {
+                "id": 6,
+                "nombre": "yessica",
+                "ruta": "Ruta Java",
+                "horario": "10am a 2pm"
             }
         ],
         "ruta": [
             {
                 "id": 1,
-                "nombre": "ruta NodeJS",
+                "trainer":"Jholver",
+                "nombre": "Ruta NodeJS",
                 "modulo": "Fundamentos de programacion (introduccion a la algoritmia, Pseint, Python)",
                 "capacidad_maxima": 33
             },
             {
                 "id": 2,
-                "nombre": "ruta Java",
+                "trainer":"Pedro, Isa",
+                "nombre": "Ruta Java",
                 "modulo": "programacion web(HTML, CSS, Bootstrap)",
                 "capacidad_maxima": 33
             },
             {
                 "id": 3,
-                "nombre": "ruta NetCore",
+                "trainer":"Miguel",
+                "nombre": "Ruta NetCore",
                 "modulo": "programacion formal",
                 "SGDB_principal": "Java",
                 "SGDB_alternativo": "JavaScript, C#",
@@ -305,8 +313,8 @@
                 "salon": "Salon Artemis"
             }
         ],
-        "reportes": "rutas",
         "rutaEntrenamiento": "Ruta NodeJS",
+        "trainer": "Jholver",
         "campersInscritos": [
             {
                 "id": 1,
@@ -367,6 +375,7 @@
     },
     {
         "rutaEntrenamiento": "Ruta Java",
+        "trainer": "Pedro, Isa",
         "campersInscritos": [
             {
                 "id": 1,
@@ -427,6 +436,7 @@
     },
     {
         "rutaEntrenamiento": "Ruta NetCore",
+        "trainer": "Miguel",
         "campersInscritos": [
             {
                 "id": 1,
@@ -482,6 +492,34 @@
                 "numero_fijo": "601579552",
                 "estado": "Expulsado",
                 "riesgo": "Alto"
+            }
+        ],
+        "reporte": [
+            {
+                "id": 1,
+                "nombre": "Luis",
+                "apellido": "Caicedo",
+                "estado": "Aprobado"
+            },
+            {
+                "id": 2,
+                "nombre": "Anne",
+                "apellido": "Ortega",
+                "estado": "Inscrito"
+            }
+        ],
+        "estado": [
+            {
+                "id": 1,
+                "nombre": "Luis",
+                "apellido": "Caicedo",
+                "estado": "Inscrito"
+            },
+            {
+                "id": 2,
+                "nombre": "Jaime",
+                "apellido": "Barrera",
+                "estado": "Inscrito"
             }
         ]
     }
