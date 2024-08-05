@@ -25,4 +25,4 @@ Como se puede observar la estructura contiene tres archivos donde se encuentra e
 
 # Desarrollado por
 
-El trabajo fue desarrollado por Alejandra Machuca, estudiante de CampusLands como proyecto de Python.
+El trabajo fue desarrollado por Alejandra Machuca y Yessica Perez, estudiantes de CampusLands como proyecto de Python.
