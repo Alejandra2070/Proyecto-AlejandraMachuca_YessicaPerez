@@ -1,3 +1,4 @@
+from datetime import date
 import json
 #Función para abrir el json y cargar su contenido en una lista
 def abrirarchivo():
@@ -251,11 +252,13 @@ elif opc=="3":
         print("11. Eliminar campers")
         print("12. Eliminar trainers")
         print("13. Eliminar rutas")
-        print("14. Salir del programa")
+        print("14. Mostrar información de las rutas entrenamiento")
+        print("15. Salir del programa")
         x=int(input("Elige una de nuestras opciones: "))
         if x==1:
             #solicitar detalles del nuevo camper al usuario
             id=int(input("Ingrese el id del nuevo camper: "))
+            fechaA= str(date.today())
             usuario=int(input("Ingrese el usuario del nuevo camper: "))
             contraseña=input("Ingrese la contraseña del nuevo camper: ")
             nombre=input("Ingrese el nombre del nuevo camper: ")
@@ -269,6 +272,7 @@ elif opc=="3":
             #crear un diccionario con la información del nuevo camper
             nuevo_camper= {
                 "id": id,
+                "fecha": fechaA, 
                 "usuario": usuario,
                 "contrasena": contraseña,
                 "nombre": nombre,
@@ -556,5 +560,17 @@ elif opc=="3":
                 print("La ruta ha sido eliminada correctamente")
             else: 
                 print("La ruta no ha sido encontrada")
+        elif x==14:
+            miInfo = abrirarchivo()
+            for i in miInfo[0]["ruta"]:
+                print("################################")
+                print("ID:",i["id"])
+                print("Trainer:",i["trainer"])
+                print("Nombre de la ruta:",i["nombre"])
+                print("Módulo de la ruta:",i["modulo"])
+                print("Capacidad máxima de la ruta:",i["capacidad_maxima"])
+                print("Estado de la ruta:",i["estado"])
+        elif x==15:
+            print("Muchas gracias por usar nuestro programa. Vuelve prontito! :D")
 elif opc=="4":
     print("Gracias por usar nuestro programa. Vuelve pronto.")
