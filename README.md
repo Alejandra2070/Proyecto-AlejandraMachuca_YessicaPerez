@@ -16,7 +16,7 @@ Este repositorio cuenta con tres archivos los cuales son: [Proyecto.py] y [campu
 
 Como se puede observar la estructura contiene tres archivos donde se encuentra el código, información utilizada en el código y un archivo readme.md con la explicación de ambos archivos.
 
-# Características
+# Características:
 
 | Nombre | Descripción |
 |--|--|
