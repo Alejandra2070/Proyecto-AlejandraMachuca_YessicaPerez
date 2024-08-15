@@ -1,4 +1,4 @@
-from datetime import date
+from datetime import datetime
 import json
 #Función para abrir el json y cargar su contenido en una lista
 def abrirarchivo():
@@ -155,7 +155,8 @@ if opc=="1":
     #imprime el menú de campers
     print("\n-----Menú campers--------")
     print("1. Revisar mi información")
-    print("2. Salir del programa")
+    print("2. Actividades realizadas")
+    print("3. Salir del programa")
     #solicita al usuario que elija una opción del menú de campers
     x=int(input("Elige una de nuestras opciones: "))
     #si el usuario elije la opción 1
@@ -178,6 +179,17 @@ if opc=="1":
             print("-------------------------")
             print("")
     elif x==2:
+        miInfo=abrirarchivo()
+        for i in miInfo[0]["campers"]:
+            dato=int(input("Ingresa el id: "))
+        datoCambiar=int(input("Que te gustaría ingresar?: /n1. Actividad"))
+        if (datoCambiar==1):
+            nuevoAct=input("Actividad que realizaste: ")
+            miInfo[0]["campers"]["actividad"] = nuevoAct
+            guardarArchivo(miInfo)
+            print("Actividad guardada correctamente.")
+            contador = 0
+    elif x==3:
         print("Hasta luego Camper. Vuelve pronto!")
         #si elije la opción 2
 elif opc=="2":
@@ -258,7 +270,8 @@ elif opc=="3":
         if x==1:
             #solicitar detalles del nuevo camper al usuario
             id=int(input("Ingrese el id del nuevo camper: "))
-            fechaA= str(date.today())
+            fechaA= datetime.now()
+            horaB= fechaA.isoformat()
             usuario=int(input("Ingrese el usuario del nuevo camper: "))
             contraseña=input("Ingrese la contraseña del nuevo camper: ")
             nombre=input("Ingrese el nombre del nuevo camper: ")
@@ -272,7 +285,8 @@ elif opc=="3":
             #crear un diccionario con la información del nuevo camper
             nuevo_camper= {
                 "id": id,
-                "fecha": fechaA, 
+                "fecha": fechaA,
+                "hora": horaB, 
                 "usuario": usuario,
                 "contrasena": contraseña,
                 "nombre": nombre,

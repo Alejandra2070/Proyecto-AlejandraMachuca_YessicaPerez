@@ -15,7 +15,8 @@
                 "numero_fijo": "6015689286",
                 "estado": "Inscrito",
                 "riesgo": "Bajo",
-                "grupo": "t1"
+                "grupo": "t1",
+                "actividad1": "desarrollo del proyecto Python"
             },
             {
                 "id": 2,
@@ -279,16 +280,14 @@
                 "trainer":"Jholver",
                 "nombre": "Ruta NodeJS",
                 "modulo": "Fundamentos de programacion (introduccion a la algoritmia, Pseint, Python)",
-                "capacidad_maxima": 33,
-                "estado": "Activa"
+                "capacidad_maxima": 33
             },
             {
                 "id": 2,
                 "trainer":"Pedro, Isa",
                 "nombre": "Ruta Java",
                 "modulo": "programacion web(HTML, CSS, Bootstrap)",
-                "capacidad_maxima": 33,
-                "estado": "Inactiva"
+                "capacidad_maxima": 33
             },
             {
                 "id": 3,
@@ -297,8 +296,7 @@
                 "modulo": "programacion formal",
                 "SGDB_principal": "Java",
                 "SGDB_alternativo": "JavaScript, C#",
-                "capacidad_maxima": 33,
-                "estado": "Finalizada"
+                "capacidad_maxima": 33
             }
         ],
         "coordinador": [
