@@ -3,7 +3,7 @@
         "grupo": "t1",
         "campers": [
             {
-                "id": 1,
+                "id": 1.1,
                 "usuario": "1",
                 "contrasena": "luisC",
                 "nombre": "Luis",
